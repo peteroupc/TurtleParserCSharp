@@ -1,7 +1,7 @@
-TurtleParserJava
+TurtleParserCSharp
 -------------------
 
-A Turtle RDF parser for Java.
+A Turtle RDF parser for C#.
 
 Donate to me
 ------------------
