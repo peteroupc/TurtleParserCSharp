@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Project DefaultTargets='Build' ToolsVersion='4.0' xmlns='http://schemas.microsoft.com/developer/msbuild/2003'>
+  <PropertyGroup>
+    <ProjectGuid>{E2A59C21-43A3-44F1-8CCD-4927D5060FD6}</ProjectGuid>
+    <Configuration Condition=' &apos;$(Configuration)&apos; == &apos;&apos; '>Debug</Configuration>
+    <Platform Condition=' &apos;$(Platform)&apos; == &apos;&apos; '>AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TurtleParserCSharp</RootNamespace>
+    <AssemblyName>TurtleParserCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=' &apos;$(Platform)&apos; == &apos;AnyCPU&apos; '>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=' &apos;$(Configuration)&apos; == &apos;Debug&apos; '>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=' &apos;$(Configuration)&apos; == &apos;Release&apos; '>
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include='System'/>
+    <Reference Include='System.Core'>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include='System.Data'/>
+    <Reference Include='System.Data.DataSetExtensions'>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include='System.Xml'/>
+    <Reference Include='System.Xml.Linq'>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+  <Compile Include='DateTimeUtility.cs'/><Compile Include='Program.cs'/><Compile Include='Properties\AssemblyInfo.cs'/><Compile Include='src\com\upokecenter\io\ConditionalBufferInputStream.cs'/><Compile Include='src\com\upokecenter\io\ICharacterInput.cs'/><Compile Include='src\com\upokecenter\io\IMarkableCharacterInput.cs'/><Compile Include='src\com\upokecenter\io\IntArrayCharacterInput.cs'/><Compile Include='src\com\upokecenter\io\MemoryOutputStream.cs'/><Compile Include='src\com\upokecenter\io\StackableCharacterInput.cs'/><Compile Include='src\com\upokecenter\io\StreamUtility.cs'/><Compile Include='src\com\upokecenter\io\StringCharacterInput.cs'/><Compile Include='src\com\upokecenter\io\Utf8CharacterInput.cs'/><Compile Include='src\com\upokecenter\rdf\IRDFParser.cs'/><Compile Include='src\com\upokecenter\rdf\NTriplesParser.cs'/><Compile Include='src\com\upokecenter\rdf\ParserException.cs'/><Compile Include='src\com\upokecenter\rdf\RDFInternal.cs'/><Compile Include='src\com\upokecenter\rdf\RDFTerm.cs'/><Compile Include='src\com\upokecenter\rdf\RDFTriple.cs'/><Compile Include='src\com\upokecenter\rdf\RDFUtility.cs'/><Compile Include='src\com\upokecenter\rdf\TurtleParser.cs'/><Compile Include='src\com\upokecenter\util\URIUtility.cs'/><Compile Include='Support.cs'/></ItemGroup>
+  <Import Project='$(MSBuildToolsPath)\Microsoft.CSharp.targets'/>
+</Project>
