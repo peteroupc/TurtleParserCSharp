@@ -6,7 +6,7 @@ using System.Text;
 
 public sealed class RDFTerm {
 
-	/**
+	*
 	 * Type value for a blank node.
 	 */
 	public static readonly int BLANK = 0; // type is blank node name, literal is blank
@@ -264,7 +264,7 @@ public sealed class RDFTerm {
 	 * in N-Triples format.  The _string will not end
 	 * in a line break.
 	 * 
-	 */
+	 
 	public override sealed string ToString(){
 		StringBuilder builder=null;
 		if(this.kind==BLANK){

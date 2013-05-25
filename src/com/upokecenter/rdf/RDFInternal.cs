@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 
 sealed class RDFInternal {
-	/**
+	*
 	 *  Replaces certain blank nodes with blank nodes whose
 	 *  names meet the N-Triples requirements
 	 * @param triples A set of RDF triples
@@ -17,14 +17,14 @@ sealed class RDFInternal {
 	 * _object as needed to allocate new blank nodes.
 	 */
 	//
-	internal static void replaceBlankNodes(ISet<RDFTriple> triples,
+	/*internal static void replaceBlankNodes(ISet<RDFTriple> triples,
 			IDictionary<string,RDFTerm> bnodeLabels){
 		if(bnodeLabels.Count==0)
 			return;
 		IDictionary<string,RDFTerm> newBlankNodes=new PeterO.Support.LenientDictionary<string,RDFTerm>();
 		IList<RDFTriple[]> changedTriples=new List<RDFTriple[]>();
 		int[] nodeindex=new int[]{0};
-		foreach(RDFTriple triple in triples){
+		foreach(var triple in triples){
 			bool changed=false;
 			RDFTerm subj=triple.getSubject();
 			if(subj.getKind()==RDFTerm.BLANK){
@@ -63,7 +63,7 @@ sealed class RDFInternal {
 				changedTriples.Add(newTriple);
 			}
 		}
-		foreach(RDFTriple[] triple in changedTriples){
+		foreach(var triple in changedTriples){
 			triples.Remove(triple[0]);
 			triples.Add(triple[1]);
 		}

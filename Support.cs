@@ -377,7 +377,7 @@ namespace PeterO.Support
 	
 	
 
-	internal sealed class WrappedInputStream : InputStream {
+	public sealed class WrappedInputStream : InputStream {
 		
 		Stream wrapped=null;
 		public WrappedInputStream(Stream wrapped) {
