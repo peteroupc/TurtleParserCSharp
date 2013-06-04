@@ -1,3 +1,11 @@
+/*
+Written in 2013 by Peter Occil.  
+Any copyright is dedicated to the Public Domain.
+http://creativecommons.org/publicdomain/zero/1.0/
+
+If you like this, you should donate to Peter O.
+at: http://upokecenter.com/d/
+*/
 namespace com.upokecenter.rdf {
 using System;
 using System.Text;
@@ -6,20 +14,6 @@ using System.IO;
 using System.Collections.Generic;
 using com.upokecenter.io;
 using com.upokecenter.util;
-//Written by Peter Occil, 2013. In the public domain.
-//Public domain dedication: http://creativecommons.org/publicdomain/zero/1.0/
-
-*
- * 
- * A parser for Turtle, a syntax for writing
- * Resource Description Framework (RDF) graphs
- * in text.
- * 
- * For more information, visit http://www.w3.org/TR/turtle/
- * 
- * @author Peter
- *
- 
 public class TurtleParser : IRDFParser {
 
 	private class TurtleObject {
@@ -60,9 +54,6 @@ public class TurtleParser : IRDFParser {
 	private class TurtleProperty {
 		public RDFTerm pred;
 		public TurtleObject obj;
-	}
-	private static bool isAsciiChar(int c, string asciiChars){
-		return (c>=0 && c<=0x7F && asciiChars.IndexOf((char)c)>=0);
 	}
 	private IDictionary<string,RDFTerm> bnodeLabels;
 	private IDictionary<string,string> namespaces;

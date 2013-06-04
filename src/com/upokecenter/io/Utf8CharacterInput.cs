@@ -1,4 +1,4 @@
-
+/*
 Written in 2013 by Peter Occil.  
 Any copyright is dedicated to the Public Domain.
 http://creativecommons.org/publicdomain/zero/1.0/
@@ -19,7 +19,7 @@ using System.IO;
  * 
  * @author Peter
  *
- 
+ */
 public class Utf8CharacterInput : ICharacterInput {
 
 	PeterO.Support.InputStream stream;

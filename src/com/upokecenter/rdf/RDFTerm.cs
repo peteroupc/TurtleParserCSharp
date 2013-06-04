@@ -1,12 +1,18 @@
-// Written by Peter Occil, 2013. In the public domain.
-// Public domain dedication: http://creativecommons.org/publicdomain/zero/1.0/
+/*
+Written in 2013 by Peter Occil.  
+Any copyright is dedicated to the Public Domain.
+http://creativecommons.org/publicdomain/zero/1.0/
+
+If you like this, you should donate to Peter O.
+at: http://upokecenter.com/d/
+*/
 namespace com.upokecenter.rdf {
 using System;
 using System.Text;
 
 public sealed class RDFTerm {
 
-	*
+	/**
 	 * Type value for a blank node.
 	 */
 	public static readonly int BLANK = 0; // type is blank node name, literal is blank
@@ -264,7 +270,7 @@ public sealed class RDFTerm {
 	 * in N-Triples format.  The _string will not end
 	 * in a line break.
 	 * 
-	 
+	 */
 	public override sealed string ToString(){
 		StringBuilder builder=null;
 		if(this.kind==BLANK){

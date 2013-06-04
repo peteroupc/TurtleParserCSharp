@@ -1,3 +1,11 @@
+/*
+Written in 2013 by Peter Occil.  
+Any copyright is dedicated to the Public Domain.
+http://creativecommons.org/publicdomain/zero/1.0/
+
+If you like this, you should donate to Peter O.
+at: http://upokecenter.com/d/
+*/
 namespace com.upokecenter.rdf {
 using System;
 using System.Globalization;
@@ -8,7 +16,7 @@ using System.Collections.Generic;
 
 
 sealed class RDFInternal {
-	*
+	/*
 	 *  Replaces certain blank nodes with blank nodes whose
 	 *  names meet the N-Triples requirements
 	 * @param triples A set of RDF triples
@@ -17,7 +25,7 @@ sealed class RDFInternal {
 	 * _object as needed to allocate new blank nodes.
 	 */
 	//
-	/*internal static void replaceBlankNodes(ISet<RDFTriple> triples,
+	internal static void replaceBlankNodes(ISet<RDFTriple> triples,
 			IDictionary<string,RDFTerm> bnodeLabels){
 		if(bnodeLabels.Count==0)
 			return;
@@ -98,8 +106,6 @@ sealed class RDFInternal {
 			nodeindex[0]++;
 		}
 	}
-
-
 	private RDFInternal(){}
 }
 

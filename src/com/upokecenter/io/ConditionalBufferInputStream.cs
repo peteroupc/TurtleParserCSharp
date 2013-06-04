@@ -266,7 +266,7 @@ public sealed class ConditionalBufferInputStream : PeterO.Support.InputStream {
 	 * invalidate the mark placed on the stream, if any.
 	 * 
 	 * @ if disableBuffer() was already called.
-	 
+	 */
 	public void rewind()  {
 		if(disabled)
 			throw new IOException();

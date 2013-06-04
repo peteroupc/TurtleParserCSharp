@@ -33,21 +33,13 @@ public sealed class StreamUtility {
 
 	public static string fileToString(PeterO.Support.File file)
 			 {
-		StreamReader reader = new StreamReader(file.ToString());
+		PeterO.Support.WrappedInputStream input=null;
 		try {
-			StringBuilder builder=new StringBuilder();
-			char[] buffer = new char[4096];
-			while(true){
-				int count=reader.Read(buffer,0,(buffer).Length);
-				if(count<0) {
-					break;
-				}
-				builder.Append(buffer,0,count);
-			}
-			return builder.ToString();
+			input=new PeterO.Support.WrappedInputStream(new FileStream((file).ToString(),FileMode.Open));
+			return streamToString(input);
 		} finally {
-			if(reader!=null) {
-				reader.Close();
+			if(input!=null) {
+				input.Close();
 			}
 		}
 	}

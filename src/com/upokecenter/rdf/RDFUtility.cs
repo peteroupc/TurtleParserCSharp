@@ -1,13 +1,16 @@
-// Written by Peter Occil, 2013. In the public domain.
-// Public domain dedication: http://creativecommons.org/publicdomain/zero/1.0/
+/*
+Written in 2013 by Peter Occil.  
+Any copyright is dedicated to the Public Domain.
+http://creativecommons.org/publicdomain/zero/1.0/
+
+If you like this, you should donate to Peter O.
+at: http://upokecenter.com/d/
+*/
+
 
 namespace com.upokecenter.rdf {
 using System;
 using System.Collections.Generic;
-
-
-
-
 
 public sealed class RDFUtility {
 	public static bool areIsomorphic(ISet<RDFTriple> graph1, ISet<RDFTriple> graph2){
@@ -36,7 +39,7 @@ public sealed class RDFUtility {
 		return true;
 	}
 
-	*
+	/**
 	 * A lax comparer of RDF triples which doesn't compare
 	 * blank node labels
 	 * 
@@ -128,7 +131,7 @@ public sealed class RDFUtility {
 		}
 		return rootJson;
 	}
-   
+   */
 	private RDFUtility(){}
 }
 
