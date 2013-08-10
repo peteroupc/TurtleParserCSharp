@@ -12,15 +12,15 @@ using System.IO;
 
 public interface IMarkableCharacterInput : ICharacterInput {
 
-	 int getMarkPosition();
+   int getMarkPosition();
 
-	 void moveBack(int count) ;
+   void moveBack(int count) ;
 
-	 int setHardMark();
+   int setHardMark();
 
-	 void setMarkPosition(int pos) ;
+   void setMarkPosition(int pos) ;
 
-	 int setSoftMark();
+   int setSoftMark();
 
 }
 }

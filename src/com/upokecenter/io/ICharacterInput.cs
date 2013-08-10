@@ -18,28 +18,28 @@ using System.IO;
  */
 public interface ICharacterInput {
 
-	/**
-	 * 
-	 * Reads the next Unicode character.
-	 * 
-	 * @return A Unicode code point or -1 if the end of
-	 * the input is reached
-	 * @ if an I/O error occurs.
-	 */
-	 int read() ;
+  /**
+   * 
+   * Reads the next Unicode character.
+   * 
+   * @return A Unicode code point or -1 if the end of
+   * the input is reached
+   * @ if an I/O error occurs.
+   */
+   int read() ;
 
-	/**
-	 * Reads multiple Unicode characters into a buffer.
-	 * 
-	 * @param buf
-	 * @param offset
-	 * @param unitCount
-	 * @return The number of Unicode characters read,
-	 * or -1 if the end of the input is reached
-	 * @ if an I/O error occurs.
-	 */
-	 int read(int[] buf, int offset, int unitCount)
-			;
+  /**
+   * Reads multiple Unicode characters into a buffer.
+   * 
+   * @param buf
+   * @param offset
+   * @param unitCount
+   * @return The number of Unicode characters read,
+   * or -1 if the end of the input is reached
+   * @ if an I/O error occurs.
+   */
+   int read(int[] buf, int offset, int unitCount)
+      ;
 }
 
 }
